@@ -1,7 +1,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 		// Post thumbnail.
-		twentyfifteen_post_thumbnail();
+		// twentyfifteen_post_thumbnail();
 	?>
 
 	<header class="entry-header">
@@ -14,11 +14,14 @@
 		?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-		<?php
 
-            if ( is_single() ) :
+	<?php
+        if ( is_single() ) :
+	?>
 
+			<div class="entry-content">
+
+			<?php
                 /* translators: %s: Name of current post */
     			the_content( sprintf(
     				__( 'Continue reading %s', 'twentyfifteen' ),
@@ -34,18 +37,17 @@
     				'separator'   => '<span class="screen-reader-text">, </span>',
     			) );
 
-            else :
+			?>
 
-                the_excerpt( sprintf(
-    				__( 'Continue reading %s', 'twentyfifteen' ),
-    				the_title( '<span class="screen-reader-text">', '</span>', false )
-    			) );
+			</div><!-- .entry-content -->
+
+		<?php
 
             endif;
 
 
 		?>
-	</div><!-- .entry-content -->
+
 
 	<?php
 		// Author bio.

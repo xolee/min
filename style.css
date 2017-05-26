@@ -300,10 +300,9 @@ pre {
 pre,
 code {
 	background-color: transparent;
-	background-color: rgba(0, 0, 0, 0.01);
-	border: 1px solid #eaeaea;
-	border: 1px solid rgba(51, 51, 51, 0.1);
-	line-height: 1.2;
+	background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 3px;
+	line-height: 1;
 	padding: 0.2em 0.4em;
 	white-space: pre;
 	white-space: pre-wrap;
@@ -311,6 +310,8 @@ code {
 }
 
 pre {
+    border: 1px solid #eaeaea;
+	border: 1px solid rgba(51, 51, 51, 0.1);
 	line-height: 1.2;
 	margin-bottom: 1.6em;
 	max-width: 100%;
@@ -1592,9 +1593,9 @@ img.aligncenter {
 	position: relative;
 }
 
-.hentry.has-post-thumbnail {
+/*.hentry.has-post-thumbnail {
 	padding-top: 0;
-}
+}*/
 
 .hentry.sticky:not(.has-post-thumbnail) {
 	padding-top: -webkit-calc(7.6923% + 24px);
