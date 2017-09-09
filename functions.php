@@ -2,7 +2,7 @@
 function yzgod_scripts() {
 
     if ( is_singular() ) {
-        wp_enqueue_style( 'highlight', get_theme_root_uri() . '/min/style/highlight/monokai-sublime.css', array(), '9.12.0' );
+        wp_enqueue_style( 'highlight', get_theme_root_uri() . '/min/style/highlight-monokai-sublime.css', array(), '9.12.0' );
         wp_enqueue_script( 'highlight-js', get_theme_root_uri() . '/min/js/highlight.pack.js', array(), '9.12.0', true );
         wp_add_inline_script( 'highlight-js', 'jQuery(document).ready(function() { jQuery(\'pre\').each(function(i, block) { hljs.highlightBlock(block); }); });' );
     }
